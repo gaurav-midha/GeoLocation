@@ -1,0 +1,29 @@
+<div data-role="page" id="edit_page">
+
+<script type="text/javascript">
+  $(document).delegate('#edit_page', 'pageshow', function() {
+    initialize();
+  });
+</script>
+
+  <div data-role="header" data-position="inline">
+    <h1>Settings</h1>
+  </div>
+
+  <div data-role="content">
+<div class="pageTitle">
+  <h1>Map Test</h1>
+</div>
+
+<div class="toolbar">
+  <div class="leftItem backButton">
+    <a href="<%= url_for :action => :home %>">HTML5 MENU</a>
+  </div>
+</div>
+
+<div class="content">
+        <div id="map_canvas" style="width: 500px; height: 500px; padding: 0;"></div>
+</div>
+  </div>
+</div>
+

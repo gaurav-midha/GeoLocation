@@ -1,0 +1,57 @@
+<div data-role="page">
+
+        
+  <div data-role="header" data-position="inline">
+    <h1>Home</h1>
+    <% if SyncEngine::logged_in > 0 %>
+        <a href="<%= url_for :action => :do_sync %>" class="ui-btn-left" data-icon="refresh">Sync</a>
+        <a href="<%= url_for :action => :logout %>" class="ui-btn-right" data-icon="star">Logout</a>
+    <% else %>
+        <a href="<%= url_for :action => :login %>" class="ui-btn-right" data-icon="star">Login</a>
+    <% end %>
+
+  </div>
+
+    
+  <div data-role="content">
+          
+         <!--slide pannel for navigation start -->
+          <div id="sliderWrap" class="mobileSite">
+            <div id="openCloseIdentifier"></div>
+            <div id="slider">
+              <div id="sliderContent">
+                <div class="navMobile">
+                  <ul>
+                    <!--<li>
+                      <div class="subScribe">
+                        <form action="" method="get">
+                          <input name="" type="text" value="Your Email Address" />
+                          <input name="" value="Subscribe" type="button" />
+                        </form>
+                      </div>
+                    </li>-->
+                    <li><a href="home.html">Home</a></li>
+                    <li class="seprator"><a href="donate.html">Donate</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="chapters.html">AIH Chapters</a></li>
+                    <li><a href="contact-for-assistanc.html">Contact for Assistance</a></li>
+                    <li class="seprator"><a href="">FAQ</a></li>
+                    <li class="padding">Spread The Word</li>
+                    <li class="padding"><img src="/public/images/socialIcon320Nav.gif" width="205" height="29" alt="" /></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="openCloseWrap"> <a href="#" class="topMenuAction" id="topMenuImage"> <img src="/public/images/open_icon.png" alt="open" /> </a> </div>
+            </div>
+          </div>
+          <!--slide pannel for navigation end -->
+          
+    <ul data-role="listview">
+      <li><a href="#">Add Links Here...</a></li>
+    </ul>
+
+  </div>
+
+</div>
