@@ -1,9 +1,10 @@
+#sdk: "C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0"
 sdkversion: "4.0.0"
-name: "GeoLocation-Testing"
-version: "1.0"
+name: "MenuBar"
+version: 1.0
 vendor: "rhomobile"
 build: "debug"
-bbver: "6.0"
+bbver: 6.0
 applog: "rholog.txt"
 iphone:
   configuration: "Release"
@@ -11,16 +12,13 @@ iphone:
   provisionprofile: 
   codesignidentity: 
   entitlements: 
-  BundleIdentifier: "com.rhomobile.geolocation-testing"
-  BundleURLScheme: "geolocation-testing"
+  BundleIdentifier: "com.saviance.rhodes"
+  BundleURLScheme: "AakashIprep"
 wp:
-  productid: "c664f820-4eb4-0131-427a-589d67d0f6ef"
+  productid: "ac2cb3e0-671d-0131-427e-589d67d0f6ef"
 symbian:
-  uid: "0xe9178dc5"
+  uid: "0xe319bad7"
 android:
   version: "2.3.3"
 extensions:
   - rhoconnect-client
-app_type: "rhoelements"
-capabilities:
-  - gps

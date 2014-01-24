@@ -7,12 +7,10 @@ class SettingsController < Rho::RhoController
   include BrowserHelper
   
   def index
-
-       WebView.execute_js("initialize();")
-     
+    @msg = @params['msg']
+    render
   end
 
-  
     
   def login
     @msg = @params['msg']
